@@ -47,3 +47,11 @@ def change_val():
         
 bar_reading_thread = Thread(target=change_val)
 bar_reading_thread.start()
+
+def example_function(old, new):
+    if old != "":
+        label = new
+        BAR_CODE.value = ""
+
+BAR_CODE.register_callback(example_function)
+    
